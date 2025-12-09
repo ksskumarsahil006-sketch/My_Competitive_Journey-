@@ -4,11 +4,11 @@ using namespace std;
 void solve(){
     int n , m ;
     cin>>n>>m;
-    if(n>2  || m>2){
-        cout<<"NO"<<endl;
-        return;
+    if((n==m and n==2 ) || (n==1 || m==1)){
+        cout<<"YES\n";
+    return;
     }
-    cout<<"YES"<<endl;
+    cout<<"NO\n";
     return;
 }
 int main(){
@@ -17,6 +17,6 @@ int main(){
     while(t--){
         solve();
     }
-    return 5;
+    return 0;
 
 }
